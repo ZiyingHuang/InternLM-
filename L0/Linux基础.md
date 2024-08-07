@@ -55,10 +55,10 @@ with gr.Blocks(gr.themes.Soft()) as demo:
 demo.launch()
 ```
 在运行代码之前，需要先使用`pip install gradio==4.29.0`命令安装依赖包，然后在终端中运行`hello_world.py`（先运行hello_world.py，再进行终端映射）
-![image](https://github.com/user-attachments/assets/fa36affc-baf5-467b-a2ff-411c925e817d)
+![image](https://github.com/user-attachments/assets/0dc4464b-fb8e-4c70-b83d-cec1629c07f3)
 
 本地终端输入映射命令
-![image](https://github.com/user-attachments/assets/f09ee31a-132c-4342-a990-1cc94fc61fe5)
+![image](https://github.com/user-attachments/assets/fa36affc-baf5-467b-a2ff-411c925e817d)
 这样就代表成功了。（注意：这个命令不返回任何的内容，这样代表端口映射在运行了，然后在网页中打开连接就可以看到web ui的界面了）
 ![image](https://github.com/user-attachments/assets/b1dfd856-0403-46e0-90c5-e51c8823a894)
 
