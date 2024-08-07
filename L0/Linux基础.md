@@ -63,5 +63,5 @@ demo.launch()
 ![image](https://github.com/user-attachments/assets/b1dfd856-0403-46e0-90c5-e51c8823a894)
 
 
-
+linux详细命令参考连接https://github.com/InternLM/Tutorial/blob/camp3/docs/L0/Linux/readme.md
 
