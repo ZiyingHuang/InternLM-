@@ -17,3 +17,49 @@ ssh -p 35267 root@ssh.intern-ai.org.cn -CNg -L 8895:127.0.0.1:8895 -o StrictHost
 到本地终端，在本地浏览器打开
 `http://localhost:7860`即可
 ![image](https://github.com/user-attachments/assets/88e98fee-1e50-4de1-aee2-936ff2849339)
+
+
+创建一个hello_world.py文件，在文件中填入以下内容：
+```
+import socket
+import re
+import gradio as gr
+ 
+# 获取主机名
+def get_hostname():
+    hostname = socket.gethostname()
+    match = re.search(r'-(\d+)$', hostname)
+    name = match.group(1)
+    
+    return name
+ 
+# 创建 Gradio 界面
+with gr.Blocks(gr.themes.Soft()) as demo:
+    html_code = f"""
+            <p align="center">
+            <a href="https://intern-ai.org.cn/home">
+                <img src="https://intern-ai.org.cn/assets/headerLogo-4ea34f23.svg" alt="Logo" width="20%" style="border-radius: 5px;">
+            </a>
+            </p>
+            <h1 style="text-align: center;">☁️ Welcome {get_hostname()} user, welcome to the ShuSheng LLM Practical Camp Course!</h1>
+            <h2 style="text-align: center;">😀 Let’s go on a journey through ShuSheng Island together.</h2>
+            <p align="center">
+                <a href="https://github.com/InternLM/Tutorial/blob/camp3">
+                    <img src="https://oss.lingkongstudy.com.cn/blog/202406301604074.jpg" alt="Logo" width="20%" style="border-radius: 5px;">
+                </a>
+            </p>
+
+            """
+    gr.Markdown(html_code)
+
+demo.launch()
+```
+在运行代码之前，需要先使用`pip install gradio==4.29.0`命令安装依赖包，然后在终端中运行`hello_world.py`（先运行hello_world.py，再进行终端映射）
+![image](https://github.com/user-attachments/assets/fa36affc-baf5-467b-a2ff-411c925e817d)
+
+本地终端输入映射命令
+![Uploading image.png…]()
+这样就代表成功了。（注意：这个命令不返回任何的内容，这样代表端口映射在运行了，然后在网页中打开连接就可以看到web ui的界面了）
+![Uploading image.png…]()
+
+
