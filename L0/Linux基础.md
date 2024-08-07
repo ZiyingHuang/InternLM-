@@ -12,7 +12,7 @@
 
 输入命令
 ```
-ssh -p 35267 root@ssh.intern-ai.org.cn -CNg -L 7860:127.0.0.1:7860 -o StrictHostKeyChecking=no
+ssh -p 35267 root@ssh.intern-ai.org.cn -CNg -L 8895:127.0.0.1:8895 -o StrictHostKeyChecking=no
 ```
 到本地终端，在本地浏览器打开
 `http://localhost:7860`即可
