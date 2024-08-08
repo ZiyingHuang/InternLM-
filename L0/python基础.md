@@ -176,3 +176,34 @@ print(alist)
     最后一个元素:  6
     [1, 0, 3, 4, 5, 6]
     [1, 3, 4, 5, 6]
+
+
+列表支持切片操作，即截取列表中的一部分长度的操作。
+
+具体语法为 list_name\[start_index:end_index:step\]。
+
+start_index为起点索引，end_index为终点索引，step为步长。要注意截取的部分为\[start_index,end_index\),也就是不包括end_index。
+
+其中step缺省时默认步长为1，start_index缺省时默认为第一个元素，end_index缺省时默认为最后一个元素。
+
+
+```python
+alist = [1,2,3,4,5,6]
+print(alist)
+
+print('获取前三个元素')
+print('alist[0:3]: ',alist[0:3])
+print('alist[:3]: ',alist[:3])
+
+print('获取第二个到第四个元素（索引1至3）')
+print('alist[1:4]: ',alist[1:4])
+
+print('获取最后三个元素')
+print('alist[-3:]: ',alist[-3:])
+
+print('获取所有索引为奇数的元素')
+print('alist[1::2]: ',alist[1::2])
+
+print('获取所有索引为偶数的元素')
+print('alist[::2]: ',alist[::2])
+```
