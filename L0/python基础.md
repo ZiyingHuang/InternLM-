@@ -65,4 +65,4 @@ print(" t_dict的类型是：",type(t_dict),' t_int的值是: ',t_dict)
      t_tuple的类型是： <class 'tuple'>  t_tuple的值是:  (1, 1, 3, 3, 5, 5)
      t_set的类型是： <class 'set'>  t_set的值是:  {1, 3, 5}
      t_dict的类型是： <class 'dict'>  t_int的值是:  {'day': 18, 'month': 6, 'year': 2024}
-    q
+    #输入Tab缩进可以直接变成代码块
