@@ -51,6 +51,21 @@ Output:
 ![image](https://github.com/user-attachments/assets/873dfe78-d585-41e1-a275-4f33f3aeb640)
 
 
-### 2.进入第一个断点
+### 2.开始debug
+进入第一个断点。
+
 此时第一个断点未执行，可以看到左边text变量为原始值
 ![image](https://github.com/user-attachments/assets/8513a83a-cd4b-44de-b145-6e93846d8d0a)
+
+
+执行完第一个断点并进入第二个断点，可以看到此时原字符串已经转换为小写字母
+![image](https://github.com/user-attachments/assets/5fe5e126-2eb5-410b-8c4d-ada251a5a973)
+
+
+再进入下一个断点，可以看到此时已经执行完上一断点的语句，将非字母的符号转换为空格
+![image](https://github.com/user-attachments/assets/658075f6-5082-426c-8c49-741d03c47989)
+
+
+进入下一断点，此时已经用.split()函数将字符串分割成单词并存入words列表中，.split()函数可以自动去除连续的空白字符
+![image](https://github.com/user-attachments/assets/dcda30fa-c082-4990-a982-d0ba10d5edc3)
+
