@@ -40,3 +40,17 @@ Output:
 {'hello': 1, 'world': 1, 'this': 1, 'is': 4, 'an': 1, 'example': 1, 'word': 1, 'count': 2, 'fun': 3, 'it': 2, 'to': 1, 'words': 1, 'yes': 1}
 ```
 ![image](https://github.com/user-attachments/assets/332b5d7d-2c0f-413c-befa-5724b5703837)
+
+
+## 任务二
+请使用本地vscode连接远程开发机，将上面你写的wordcount函数在开发机上进行debug，体验debug的全流程，并完成一份debug笔记(需要截图)。
+
+
+### 1.启动debugpy
+通过ssh远程连接开发机，配置好`python debugger:Remote Attach`，通过命名好的pyd指令进入debug
+![image](https://github.com/user-attachments/assets/873dfe78-d585-41e1-a275-4f33f3aeb640)
+
+
+### 2.进入第一个断点
+此时第一个断点未执行，可以看到左边text变量为原始值
+![image](https://github.com/user-attachments/assets/8513a83a-cd4b-44de-b145-6e93846d8d0a)
