@@ -58,7 +58,7 @@ Output:
 ![image](https://github.com/user-attachments/assets/8513a83a-cd4b-44de-b145-6e93846d8d0a)
 
 
-执行完第一个断点并进入第二个断点，可以看到此时原字符串已经转换为小写字母
+执行完第一个断点并进入第二个断点，可以看到此时原字符串已经转换为小写字母，word_count字典也开始根据单词出现次数来统计
 ![image](https://github.com/user-attachments/assets/5fe5e126-2eb5-410b-8c4d-ada251a5a973)
 
 
@@ -69,3 +69,6 @@ Output:
 进入下一断点，此时已经用.split()函数将字符串分割成单词并存入words列表中，.split()函数可以自动去除连续的空白字符
 ![image](https://github.com/user-attachments/assets/dcda30fa-c082-4990-a982-d0ba10d5edc3)
 
+
+最后正确输出结果
+![image](https://github.com/user-attachments/assets/0b3cb318-7c0b-496e-98f2-3023843f83b1)
