@@ -133,3 +133,46 @@ print('blist :',blist)
     alist : [1, 2, 3, 4, 5, 6]
     blist : ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!']
     
+
+### 2.4.2 访问元素的方法，索引与切片 
+
+python中的序列均有正向索引与反向索引，正向索引从0开始表示序列第一个元素，反向索引从-1开始表示
+以alist为例子，我们打印出alist中每个元素对于的正向索引与反向索引。
+
+
+```python
+print('elements: ','   '.join([str(i) for i in alist]))
+print('正向索引:  ','   '.join([str(i) for i in range(0,len(alist))]))
+print('反向索引:  ','  '.join([str(i) for i in range(-len(alist),0)]))#这里的len函数是用来获取列表长度的，后面会具体介绍
+```
+
+    elements:  1   2   3   4   5   6
+    正向索引:   0   1   2   3   4   5
+    反向索引:   -6  -5  -4  -3  -2  -1
+    
+
+
+```python
+#取列表第一个元素的两种方式
+print('第一个元素: ',alist[0])
+print('第一个元素: ',alist[-6])
+
+#取列表最后一个元素的两种方式
+print('最后一个元素: ',alist[-1])
+print('最后一个元素: ',alist[5])
+
+#修改第二个元素
+alist[1]=0
+print(alist)
+
+#删除第二个元素
+del alist[1]
+print(alist)
+```
+
+    第一个元素:  1
+    第一个元素:  1
+    最后一个元素:  6
+    最后一个元素:  6
+    [1, 0, 3, 4, 5, 6]
+    [1, 3, 4, 5, 6]
