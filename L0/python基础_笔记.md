@@ -19,7 +19,7 @@ alist.sort(reverse=True)#降序
 ```
 
 
-copy和clear我们放到一起讲
+copy和clear我们放到一起讲 
 如何备份一个alist?直接=和使用copy的区别：alist_copy = alist时并没有新建一个对象，而只是单纯赋值了alist的地址给alist_copy。这会导致我们对变量alist_copy的所有操作本质上都是在操作alist。而当我们使用.copy()方法进行赋值时，会复制alist为一个新的对象，此时对新对象的修改不会影响到alist。
 
 ```python
