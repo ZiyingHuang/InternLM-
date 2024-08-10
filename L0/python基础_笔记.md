@@ -79,3 +79,7 @@ print('aset.update(bset)后的aset :',aset)
     aset:  {1, 2, 3, 4}
     bset:  {3, 4, 5}
     aset.update(bset)后的aset : {1, 2, 3, 4, 5}
+
+待完善：
+list.pop([index=-1])
+set：pop()、remove()、discard()
