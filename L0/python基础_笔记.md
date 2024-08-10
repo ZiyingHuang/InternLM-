@@ -40,3 +40,25 @@ print('blist: ',blist)
     alist:  []
     blist_copy:  []
     blist:  [10, 8, 7, 6, 5, 3, 2, 1, 1, 0, 0]
+
+
+
+### 2.6集合
+```python
+#新建一个集合
+aset = {1,2,3,4,5}
+#新建一个空集合
+aset = set()
+print('这是一个空集合: ',aset)
+```
+    这是一个空集合:  set()
+
+```python
+#将其他序列转换成集合,注意观察转换前后的变化
+alist = [1,1,1,1,2,2,2,2,3,3,3]
+print('alist: ',alist)
+aset = set(alist)
+print('aset: ',aset)
+```
+    alist:  [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3]
+    aset:  {1, 2, 3}
