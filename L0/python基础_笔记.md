@@ -62,3 +62,14 @@ print('aset: ',aset)
 ```
     alist:  [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3]
     aset:  {1, 2, 3}
+
+```python
+#合并两个集合
+print('aset: ',aset)
+print('bset: ',bset)
+aset.update(bset)
+print('aset.update(bset)后的aset :',aset)
+```
+    aset:  {1, 2, 3, 4}
+    bset:  {3, 4, 5}
+    aset.update(bset)后的aset : {1, 2, 3, 4, 5}
