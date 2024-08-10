@@ -80,6 +80,18 @@ print('aset.update(bset)后的aset :',aset)
     bset:  {3, 4, 5}
     aset.update(bset)后的aset : {1, 2, 3, 4, 5}
 
-待完善：
-list.pop([index=-1])
-set：pop()、remove()、discard()
+### 对比list和set的pop和删除方法
+#### 2.6.3 pop
+`value = list.pop([index=-1])`  
+移除列表中的一个元素（默认最后一个元素），并且返回该元素的值
+
+`value = set.pop()`  
+随机移除元素，返回被移除的元素（对比列表是最后一个元素，集合的**随机**可以理解为集合的无序性）
+
+#### 2.6.4 移除操作
+`list.remove(obj)`  
+移除列表中某个值**第一个**匹配项，不返回值
+
+`set.remove(val)`移除指定元素，不返回值  
+`set.discard(val)`删除指定元素，不返回值  
+两个作用一样
