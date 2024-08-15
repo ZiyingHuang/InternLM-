@@ -126,7 +126,7 @@ print(','.join(word_list))
     ['success', 'is', 'not', 'final', '', 'failure', 'is', 'not', 'fatal', '', 'it', 'is', 'the', 'courage', 'to', 'continue', 'that', 'counts', '']
     success,is,not,final,,failure,is,not,fatal,,it,is,the,courage,to,continue,that,counts,
 
-注意看上面使用的是`.split(" ")`，当出现连续空格，最后得到的结果会有空字符`''`。如果不想出现这种情况就用`.split()`，括号里不加任何东西，会自动根据所有空白字符分割，并自动将所有连续的空白字符看成是一个（空白字符包括空格、换行符`\n`、制表符`\t`）
+注意看上面使用的是`.split(" ")`，当出现连续空格，最后得到的结果会有空字符`''`。如果不想出现这种情况就用`.split()`，括号里不加任何东西，自动将所有连续的空白字符看成是一个来进行分割（空白字符包括空格、换行符`\n`、制表符`\t`）
 ##### split
     str.split(ch="", num=string.count(str))
 以 ch 为分隔符截取字符串，如果 num 有指定值，则仅截取 num+1 个子字符串
