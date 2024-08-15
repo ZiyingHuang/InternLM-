@@ -95,3 +95,38 @@ print('aset.update(bset)后的aset :',aset)
 `set.remove(val)`移除指定元素，不返回值  
 `set.discard(val)`删除指定元素，不返回值  
 两个作用一样
+
+
+
+
+
+### 2.8 字符串
+#### 2.8.1
+##### 2.8.1.1 特殊字符
+制表符`\t`：跳到下一个制表位（不是加入四个空格）
+换行符`\n`  
+（都是反斜杠）
+
+#### 2.8.2
+要注意的是，因为字符串是不可修改的对象，所以每个修改字符串的方法都是将修改后的字符串作为一个新对象返回。  
+（可以将原对象使用方法后赋值给原对象，按上面的说法此时的“原对象”应该是新对象了，只不过还可以用原来这个名字）
+
+```python
+#首先我们把这句话中所有的字母都转换为小写
+text = text.lower()
+#再用replace把所有的标点符号去掉
+text = text.replace(','," ").replace(':'," ").replace('.'," ")
+#再用split把这句话拆成词组成的列表
+word_list = text.split(" ")
+#再用join函数用，把这个列表拼会一个字符串
+print(','.join(word_list))
+```
+    success is not final, failure is not fatal: it is the courage to continue that counts.
+    success is not final  failure is not fatal  it is the courage to continue that counts 
+    ['success', 'is', 'not', 'final', '', 'failure', 'is', 'not', 'fatal', '', 'it', 'is', 'the', 'courage', 'to', 'continue', 'that', 'counts', '']
+    success,is,not,final,,failure,is,not,fatal,,it,is,the,courage,to,continue,that,counts,
+
+注意看上面使用的是`.split(" ")`，当出现连续空格，最后得到的结果会有空字符`''`。如果不想出现这种情况就用`.split()`，括号里不加任何东西，会自动根据所有空白字符分割，并自动将所有连续的空白字符看成是一个（空白字符包括空格、换行符`\n`、制表符`\t`）
+##### split
+    str.split(ch="", num=string.count(str))
+以 ch 为分隔符截取字符串，如果 num 有指定值，则仅截取 num+1 个子字符串
