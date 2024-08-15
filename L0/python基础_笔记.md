@@ -128,5 +128,8 @@ print(','.join(word_list))
 
 注意看上面使用的是`.split(" ")`，当出现连续空格，最后得到的结果会有空字符`''`。如果不想出现这种情况就用`.split()`，括号里不加任何东西，自动将所有连续的空白字符看成是一个来进行分割（空白字符包括空格、换行符`\n`、制表符`\t`）
 ##### split
-    str.split(ch="", num=string.count(str))
-以 ch 为分隔符截取字符串，如果 num 有指定值，则仅截取 num+1 个子字符串
+    string.split("str", num)
+以 str 为分隔符截取字符串string，如果 num 有指定值，则仅截取 num+1 个子字符串
+##### join
+    'str'.join(seq)
+以指定字符串str作为分隔符，将 seq 中所有的元素(的字符串表示)合并为一个新的字符串
