@@ -140,3 +140,9 @@ print(','.join(word_list))
 cleaned_text = ''.join(char if char.isalpha() else ' ' for char in text)
 ```
 
+#### 2.8.3 字符串格式化
+##### 新用法f-sting
+python在3.6推出的f-sting功能，只需在字符串开头加上f，该字符串中的{}中的python代码就会被评估。
+```python
+string = f"字符{变量}串"
+```
