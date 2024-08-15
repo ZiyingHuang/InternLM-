@@ -134,6 +134,6 @@ print(','.join(word_list))
 ##### join
     'str'.join(seq)
 以指定字符串str作为分隔符，将 序列seq 中所有的元素(的字符串表示)合并为一个新的字符串  
-分隔符str可以是空字符，相当于直接连接seq的所有元素，例如：  
+分隔符str可以是空字符，相当于直接连接seq的所有元素，例如：
     cleaned_text = ''.join(char if char.isalpha() else ' ' for char in text)
 创建一个新的字符串，其中非字母字符被替换为空格
