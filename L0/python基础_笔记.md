@@ -160,3 +160,27 @@ string = f"字符{变量}串"
 
 * 参数是可变对象时，传参时传递的是索引，在函数中修改该参数会作用于原对象
 * 参数是不可变对象时，传参时会自动复制，在函数中修改该参数不会作用于原对象
+```python
+def update(number,alist):
+    number = 3
+    alist[1] = 3
+    print("number: ", number)
+    print("alist: ", alist)
+    print("id(number)",id(number))
+    print("id(alist)",id(alist))
+a = 2
+b = [1,1,1]
+print(id(a))
+print(id(b))
+update(a,b)
+print('a: ',a)
+print('b: ',b)
+```
+    2739917384016
+    2739998047808
+    number:  3
+    alist:  [1, 3, 1]
+    id(number) 2739917384048
+    id(alist) 2739998047808
+    a:  2
+    b:  [1, 3, 1]
