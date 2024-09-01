@@ -220,4 +220,6 @@ print('b: ',b)
 
 
 参数分为默认值参数、位置参数、关键字参数，位置参数可以直接按位置传递，但要在使用关键字参数之前，如：
-    combined_example(1, 2, kwd_only=3)
+```
+combined_example(1, 2, kwd_only=3)
+```
