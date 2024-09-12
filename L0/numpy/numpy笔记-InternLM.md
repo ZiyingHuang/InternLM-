@@ -12,3 +12,23 @@ NumPy数组（ndarray）的特点：
 3. 方便易用：NumPy提供了大量数学和数值计算函数，使得数组操作非常方便。
    
 4. 灵活性：NumPy数组可以在不同的数据类型之间灵活转换，支持整数、浮点数、复数等多种数据类型。
+
+
+创建numpy数组最常见的方法就是将一个列表使用np.array()函数转成ndarray。
+TIPS:在notebook中将光标移动到函数的括号中间，按下shift+tab可以看到函数的提示
+```python
+import numpy as np
+array1 = np.array([1,2,3,4,5])
+#np.array函数全部的参数有
+#np.array(object, dtype=None, *, copy=True, order='K', subok=False, ndmin=0,like=None)
+#具体可以尝试上面提到的查看函数提示的方法或者去看numpy的文档
+#dtype参数表示array中元素的类型，这个参数在numpy中很常见。
+print('array1: \n',array1)
+array2 = np.array([[1,2],[3,4]])
+print('array2: \n ',array2)
+```
+   array1: 
+    [1 2 3 4 5]
+   array2: 
+     [[1 2]
+    [3 4]]
