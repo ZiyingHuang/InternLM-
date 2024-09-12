@@ -54,10 +54,10 @@ np.stack(arrays, axis=0)
 
 简单来说，stack 用于添加新维度并堆叠数组，而 concatenate 用于沿现有轴拼接数组。
 
-3. numpy.vstack(arrays)
+3. numpy.vstack(arrays)  
    np.concatenate的特殊情况，相当于axis=0，通过垂直堆叠来生成数组
 
-4. numpy.hstack(arrays)
+4. numpy.hstack(arrays)  
    np.concatenate的特殊情况，相当于axis=1，通过水平堆叠来生成数组
 
 
