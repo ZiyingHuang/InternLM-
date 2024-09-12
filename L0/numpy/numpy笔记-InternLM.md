@@ -27,8 +27,10 @@ print('array1: \n',array1)
 array2 = np.array([[1,2],[3,4]])
 print('array2: \n ',array2)
 ```
-   array1: 
-    [1 2 3 4 5]
-   array2: 
-     [[1 2]
-    [3 4]]
+```
+array1: 
+ [1 2 3 4 5]
+array2: 
+  [[1 2]
+ [3 4]]
+```
