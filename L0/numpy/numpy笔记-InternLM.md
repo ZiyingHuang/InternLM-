@@ -52,9 +52,13 @@ np.stack(arrays, axis=0)
 | **输入要求**           | 输入数组的形状必须完全相同         | 除拼接轴外，其他维度的大小相同   |
 | **常见应用场景**       | 用于生成高维数组，如从多个2D数组创建3D数组 | 用于沿现有轴拼接数组，如拼接多个样本集 |
 
+简单来说，stack 用于添加新维度并堆叠数组，而 concatenate 用于沿现有轴拼接数组。
 
+3. numpy.vstack(arrays)
+   np.concatenate的特殊情况，相当于axis=0，通过垂直堆叠来生成数组
 
-
+4. numpy.hstack(arrays)
+   np.concatenate的特殊情况，相当于axis=1，通过水平堆叠来生成数组
 
 
 
